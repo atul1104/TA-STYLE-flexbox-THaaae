@@ -1,0 +1,188 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Customized CSS */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: serif;
+}
+
+/* General */
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+/* Header */
+.header{
+    padding:  16px 0;
+    background-color: #22396a;
+    color: white;
+}
+.brand-img{
+    width: 80px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav a span{
+    color: white;
+    margin:0 15px 0 32px;
+    vertical-align: middle;
+}
+.nav a{
+  text-decoration: none;
+  font-size: 20px;
+}
+.nav a img{
+    vertical-align: middle;
+} 
+/* Main */
+.padding{
+    padding: 60px 32px;
+}
+.sidebar{
+    background-color: skyblue;
+    padding: 32px;
+    flex: 0 1 30%;
+    align-self: stretch;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sidebar-nav{
+    display: flex;
+    flex-direction: column;
+}
+.sidebar-nav a{
+    text-decoration: none;
+    color: #22396a;
+    padding: 16px;
+    border-radius: 4px;
+}
+.sidebar-nav a img{
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.sidebar-nav .active{
+    border: 2px solid orange;
+}
+.active span{
+    color: orange;
+}
+.logout-btn{
+    border:none;
+    color: #22396a;
+    box-shadow: none;
+    padding: 16px 32px;
+    font-size: 20px;
+    width: 100%;
+    border-radius: 5px;
+    text-align: left;
+}
+.logout-btn img{
+    margin-right: 15px;
+    vertical-align: middle;
+}
+/* Article */
+.article{
+    flex: 0 1 60%;
+    background-color:#c6d8ff;
+    padding: 24px;
+    border-radius: 8px;
+}
+.heading{
+    font-size: 32px;
+    color: #22396a;
+    margin: 16px 0;
+}
+.text{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #22396a;
+    margin-bottom: 12px;
+}
+.read-more-btn{
+    padding: 16px 32px;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+/* Footer */
+.footer{
+    background-color: #22396a;
+    padding: 32px;
+    color: white;
+}
+.footer a{
+    text-decoration: none;
+}
+
+.footer-tab{
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    margin-left: 40px;
+}
